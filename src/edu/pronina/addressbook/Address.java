@@ -7,8 +7,8 @@ public class Address {
     private String flat;
 
     Address(String street, String house, String flat) {
-        this.street = street;
         this.house = house;
+        this.street = street;
         this.flat = flat;
     }
 
