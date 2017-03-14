@@ -14,7 +14,7 @@ public class AddressBook {
     }
 
     public void deleteContact(String n, Address a) {
-        this.contacts.remove(n, a);
+        contacts.remove(n, a);
     }
 
     public void changeContact(String n, Address a) {
@@ -25,9 +25,9 @@ public class AddressBook {
         return (Address) this.contacts.get(n);
     }
 
-    public List<String> peopleSameStreet (String nameOfStreet) {
+    public List<String> peopleSameStreet(String nameOfStreet) {
         List<String> listOfPeople = new ArrayList<>();
-        for (Map.Entry<String, Address> entry : contacts.entrySet()){
+        for (Map.Entry<String, Address> entry : contacts.entrySet()) {
             Address address = entry.getValue();
             if (address.street.equals(nameOfStreet)) {
                 listOfPeople.add(entry.getKey());
@@ -36,9 +36,9 @@ public class AddressBook {
         return listOfPeople;
     }
 
-    public List<String> peopleSameHouse (String numberOfHouse) {
+    public List<String> peopleSameHouse(String numberOfHouse) {
         List<String> listOfPeople = new ArrayList<>();
-        for (Map.Entry<String, Address> entry : contacts.entrySet()){
+        for (Map.Entry<String, Address> entry : contacts.entrySet()) {
             Address address = entry.getValue();
             if (address.house.equals(numberOfHouse)) {
                 listOfPeople.add(entry.getKey());
