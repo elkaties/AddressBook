@@ -32,5 +32,14 @@ public class Address {
         result = 31 * result + flat.hashCode();
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "street='" + street + '\'' +
+                ", house='" + house + '\'' +
+                ", flat='" + flat + '\'' +
+                '}';
+    }
 }
 

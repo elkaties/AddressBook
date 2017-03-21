@@ -21,7 +21,7 @@ public class AddressBook {
         this.contacts.put(n, a);
     }
 
-    public Address getName(String n) {
+    public Address getAddress(String n) {
         return (Address) this.contacts.get(n);
     }
 
